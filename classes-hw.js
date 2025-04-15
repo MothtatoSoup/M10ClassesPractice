@@ -51,9 +51,22 @@ const problems = [
   function problem3() {
     // Problem 3:
     // Create a class called Bird with a method fly() that logs "Flying"
+    class Bird{
+      fly(){
+        return "Flying"
+      }
+    }
     // Create a class called Penguin that extends Bird and overrides the fly() method to log "Penguins can't fly"
+    class Penguin extends Bird{
+      fly(){
+        return "Penguins can't fly"
+      }
+    }
     // Then create one Bird and one Penguin, and call their fly() methods.
-
+    let birb = new Bird
+    let peso = new Penguin
+    log(birb.fly())
+    log(peso.fly())
     // Write your class and code here
   },
   function problem4() {
