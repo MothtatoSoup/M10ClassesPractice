@@ -45,7 +45,8 @@ const problems = [
       }
     }
     // Then create an instance, set the name to your name, and log it using getName().
-    let me = new Person("Maddy")
+    let me = new Person()
+    me.setName("Maddy")
     log(me.getName())
   },
   function problem3() {
