@@ -98,9 +98,21 @@ const problems = [
   function problem5() {
     // Problem 5:
     // Create a class called Employee with a method work() that logs "Working..."
+    class Employee{
+      work(){
+        return "Working 9 to 5, what a way to make a livin'"
+      }
+    }
     // Create a subclass called Manager that has an additional method hireEmployee() that logs "Employee hired"
+    class Manager extends Employee{
+      hireEmployee(){
+        return "Employee Hired"
+      }
+    }
     // Then create an instance of Manager, and call both methods.
-
+    let bob = new Manager
+    log(bob.work())
+    log(bob.hireEmployee())
     // Write your class and code here
   }
 ];
