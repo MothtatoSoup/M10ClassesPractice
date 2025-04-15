@@ -72,12 +72,28 @@ const problems = [
   function problem4() {
     // Problem 4:
     // Create a base class called Shape with a method describe() that logs "I'm a shape"
+    class Shape{
+      describe(){
+        return "I'm a shape"
+      }
+    }
     // Create two subclasses: Circle and Square
-    // - Circle's describe() method logs "I'm a circle"
-    // - Square's describe() method logs "I'm a square"
+    class Circle extends Shape{
+      describe(){
+        return "I'm a circle"    // - Circle's describe() method logs "I'm a circle"
+      }
+    }
+    class Square extends Shape{
+      describe(){
+        return "I'm a square"// - Square's describe() method logs "I'm a square"
+      }
+    }
     // Then create instances of Circle and Square and call their describe() methods.
+    let circe = new Circle
+    let sponge = new Square
+    log(circe.describe())
+    log(sponge.describe())
 
-    // Write your class and code here
   },
   function problem5() {
     // Problem 5:
