@@ -16,11 +16,22 @@ const problems = [
   function problem1() {
     // Problem 1:
     // Create a class called Calculator with two methods:
-    //  - add(x, y): returns the sum of x and y
-    //  - subtract(x, y): returns the result of x minus y
+    class Calculator{
+        constructor(x,y){
+          this.x = x
+          this.y = y
+          }
+      add(){ //  - add(x, y): returns the sum of x and y
+        return `Addition: ${this.x + this.y}`
+      }
+      subtract(){ //  - subtract(x, y): returns the result of x minus y
+        return `Subtraction: ${this.x - this.y}`
+      }
+    }
     // Then create an instance and call both methods.
-
-    // Write your class and code here
+    let maths = new Calculator(8,10)
+    log(maths.add())
+    log(maths.subtract())
   },
   function problem2() {
     // Problem 2:
