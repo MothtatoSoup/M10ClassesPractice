@@ -36,11 +36,17 @@ const problems = [
   function problem2() {
     // Problem 2:
     // Create a class called Person with two methods:
-    //  - setName(name): sets a property called name
-    //  - getName(): returns the name
+    class Person{
+      setName(name){     //  - setName(name): sets a property called name
+        this.name = name
+      }
+      getName(){     //  - getName(): returns the name
+        return `Name: ${this.name}`
+      }
+    }
     // Then create an instance, set the name to your name, and log it using getName().
-
-    // Write your class and code here
+    let me = new Person("Maddy")
+    log(me.getName())
   },
   function problem3() {
     // Problem 3:
